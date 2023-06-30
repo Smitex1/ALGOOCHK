@@ -1,0 +1,17 @@
+ALGORITHM SENTENCE_character
+VAR
+    length, word_count, vowel_count,alphabet
+BEGIN
+    length = 0
+    word_count = 0
+    vowel_count = 0
+    for char in sentence:
+        length += 1
+
+        if char.isalphabet():
+            if char.lower() in ['a', 'e', 'i', 'o', 'u']:
+                vowel_count += 1
+
+        if char == ' ':
+            word_count += 1
+END
